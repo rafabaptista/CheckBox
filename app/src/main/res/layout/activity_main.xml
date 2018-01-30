@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="checkbox.studio.com.checkbox.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="38dp"
+        android:text="Quais animais de estimação você tem?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkCao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:text="Cão" />
+
+    <CheckBox
+        android:id="@+id/checkGato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkCao"
+        android:layout_below="@+id/checkCao"
+        android:layout_marginTop="12dp"
+        android:text="Gato" />
+
+    <CheckBox
+        android:id="@+id/checkPapagaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkGato"
+        android:layout_below="@+id/checkGato"
+        android:layout_marginTop="13dp"
+        android:text="Papagaio" />
+
+    <Button
+        android:id="@+id/botaoMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkPapagaio"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/checkPapagaio"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/textExibicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/botaoMostrar"
+        android:layout_below="@+id/botaoMostrar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="53dp"
+        android:text="Mostrar..." />
+</RelativeLayout>
